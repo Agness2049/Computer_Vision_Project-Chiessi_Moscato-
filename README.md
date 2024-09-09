@@ -10,14 +10,14 @@ The dataset consists of images of cubic objects. For each image:
 - The correct grasp positions are computed based on the center of mass of the objects
 - The dataset is labeled with the computed grasp coordinates, distance from the center of mass and evaluation of the grasp.
 
-![ Image loaded ](Cubo_giallo.png)
+![ Image loaded ](Images/Cubo_giallo.png)
 
 To create the dataset, the following steps were followed:
 - Image loading: cube creation, cube upload and mask computation
 - Creation of evaluation table: grasp position generation and label assignment
 - Data augmentation: tranformations applied to the dataset.
 
-![Grasp position generation and center of mass](grasp_positions_and_center_of_mass.png)
+![Grasp position generation and center of mass](Images/grasp_positions_and_center_of_mass.png)
 
 ## **Model training**
 
@@ -31,4 +31,4 @@ The model used for grasp position prediction is a linear regression Convolutiona
 After training the model, it can be used to predict the grasp positions for new images of cubic objects. The input image is fed into the model, which outputs the predicted grasp coordinates  
 and also an image that allows to visualize the output.
 
-![Best grasp position generated](best_grasp_position.png)
+![Best grasp position generated](Images/best_grasp_position.png)
